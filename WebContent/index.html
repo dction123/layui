@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Insert title here</title>
+ <link rel="stylesheet" href="layui/css/layui.css">
+<script type="text/javascript" src="layui/layui.js"></script>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+layui.define(function(exports){
+	  //do something
+	  
+	  exports('demo', function(){
+	    alert('Hello World123!');
+	  });
+	});
+	
+layui.define(function(exports){
+	exports('test',function(){
+		alert('test');
+	});
+});	
+</script>
+
+
+<script type="text/javascript">
+layui.use(['test'], function(){
+	  layui.test();
+	});
+
+
+</script>
+</body>
+</html>

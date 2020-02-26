@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Insert title here</title>
+ <link rel="stylesheet" href="layui/css/layui.css">
+<script type="text/javascript" src="layui/layui.js"></script>
+</head>
+<body>
+
+<span class="layui-breadcrumb" lay-separator="-">
+  <a href="">首页</a>
+  <a href="">国际新闻</a>
+  <a href="">亚太地区</a>
+  <a><cite>正文</cite></a>
+</span> 
+<p>
+   <span class="layui-breadcrumb" lay-separator="|">
+  <a href="">娱乐</a>
+  <a href="">八卦</a>
+  <a href="">体育</a>
+  <a href="">搞笑</a>
+  <a href="">视频</a>
+  <a href="">游戏</a>
+  <a href="" >综艺</a>
+</span>   
+      
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+layui.use('element', function(){
+	  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+	  
+	  //监听导航点击
+	  element.on('nav(demo)', function(elem){
+	    //console.log(elem)
+	    layer.msg(elem.text());
+	  });
+	});
+
+</script>
+
+</body>
+</html>

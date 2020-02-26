@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Insert title here</title>
+ <link rel="stylesheet" href="layui/css/layui.css">
+<script type="text/javascript" src="layui/layui.js"></script>
+</head>
+<body>
+<ul class="layui-nav layui-bg-green">
+  <li class="layui-nav-item">
+    <a href="">控制台<span class="layui-badge">9</span></a>
+  </li>
+  <li class="layui-nav-item">
+    <a href="">个人中心<span class="layui-badge-dot"></span></a>
+  </li>
+  <li class="layui-nav-item">
+    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+    <dl class="layui-nav-child">
+      <dd><a href="javascript:;">修改信息</a></dd>
+      <dd><a href="javascript:;">安全管理</a></dd>
+      <dd><a href="javascript:;">退了</a></dd>
+    </dl>
+  </li>
+</ul>
+
+<ul class="layui-nav layui-nav-tree" id="L_demoNav" lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a href="javascript:;">默认展开<span class="layui-nav-more"></span></a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">选项1</a></dd>
+            <dd><a href="javascript:;">选项2</a></dd>
+            <dd><a href="">跳转项</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">解决方案<span class="layui-nav-more"></span></a>
+          <dl class="layui-nav-child">
+            <dd><a href="">移动模块</a></dd>
+            <dd><a href="">后台模版</a></dd>
+            <dd><a href="">电商平台</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="">产品</a>
+        </li>
+        <li class="layui-nav-item"><a href="">大数据</a></li>
+        <li class="layui-nav-item layui-hide layui-this" id="L_demoNavReset"><a href="javascript:;" onclick="L_demoNav.className='layui-nav layui-nav-tree';L_demoNavReset.className='layui-nav-item layui-hide';">还原该导航演示</a></li>
+      </ul>
+      
+      
+ 
+ 
+ <hr>
+ 	<p>
+ 	  <span class="layui-breadcrumb">
+  <a href="">首页</a>
+  <a href="">国际新闻</a>
+  <a href="">亚太地区</a>
+  <a><cite>正文</cite></a>
+</span>  
+ 	
+ 	</p>     
+  
+
+      
+      
+      
+      
+      
+      
+  <script type="text/javascript">
+layui.use('element', function(){
+	  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+	  
+	  //监听导航点击
+	  element.on('nav(demo)', function(elem){
+	    //console.log(elem)
+	    layer.msg(elem.text());
+	  });
+	});
+
+</script>    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</body>
+</html>
